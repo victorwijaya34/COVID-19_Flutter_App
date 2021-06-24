@@ -1,22 +1,27 @@
 POST {{baseUrl}}/token
 Authorization: Basic {{authorization}}
 
+###
 GET {{baseUrl}}/cases
 Accept: application/json
-Authorization: Bearer {{authorization}}
+Authorization: Bearer {{accessToken}}
 
+###
 GET {{baseUrl}}/casesSuspacted
 Accept: application/json
-Authorization: Bearer {{authorization}}
+Authorization: Bearer {{accessToken}}
 
+###
 GET {{baseUrl}}/casesConfirmed
 Accept: application/json
-Authorization: Bearer {{authorization}}
+Authorization: Bearer {{accessToken}}
 
+###
 GET {{baseUrl}}/deaths
 Accept: application/json
-Authorization: Bearer {{authorization}}
+Authorization: Bearer {{accessToken}}
 
+###
 GET {{baseUrl}}/recovered
 Accept: application/json
-Authorization: Bearer {{authorization}}
+Authorization: Bearer {{accessToken}}
